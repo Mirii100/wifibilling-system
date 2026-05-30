@@ -185,7 +185,8 @@ export default function App() {
       setMessage({ text: `STK Push sent to ${formattedPhone}. Enter PIN to complete.`, type: 'info' })
       setTimeout(() => {
         setPurchasedPackage(selectedPackage)
-        setRemainingTime(selectedPackage!.duration_seconds)
+        const expiry = Date.now() + (selectedPackage!.duration_seconds * 1000);
+        setExpiryTime(expiry);
         setIsConnected(true)
         setMessage({ text: 'Payment confirmed! Account activated.', type: 'success' })
         setIsDrawerOpen(false)
