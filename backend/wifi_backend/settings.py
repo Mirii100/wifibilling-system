@@ -120,7 +120,7 @@ CELERY_TASK_SERIALIZER = 'json'
 CELERY_RESULT_SERIALIZER = 'json'
 CELERY_TIMEZONE = 'UTC'
 
-APPEND_SLASH = True
+APPEND_SLASH = False
 
 
 # Password validation

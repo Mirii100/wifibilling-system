@@ -56,7 +56,7 @@ class DarajaService:
             "PhoneNumber": phone_number,
             "CallBackURL": settings.MPESA_CALLBACK_URL,
             "AccountReference": account_reference,
-            "TransactionDesc": "Payment to HOPE WiFi Solutions"
+            "TransactionDesc": "Payment to ALEXIA TECH WiFi Solutions"
         }
 
         api_url = f"{self.base_url}/mpesa/stkpush/v1/processrequest"
